@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎉</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Happy Birthday! 🎉</h1>
+            <p class="hero-subtitle">To the most amazing person in my life</p>
+            <button class="cta-button">Scroll Down to Celebrate 💝</button>
+        </div>
+    </section>
+
+    <section class="message-section">
+        <div class="message-card">
+            <h2 class="section-title">A Message for You</h2>
+            <p class="message-text">
+                Today is your birthday. A day to celebrate everything that makes you special, 
+                wonderful, and absolutely incredible. Even though we're far apart, 
+                my love and wishes for you are closer than ever.
+            </p>
+            <p class="message-text">
+                Thank you for being the light in my life. I can't wait until we're together again. ❤️
+            </p>
+        </div>
+    </section>
+
+    <section class="photo-section">
+        <h2 class="section-title">Our Moments Together</h2>
+        <div class="photo-grid">
+            <div class="photo-card">
+                <img src="images/smile.png" alt="Photo 1" class="photo-image">
+                <p>Your beautiful smile</p>
+            </div>
+            <div class="photo-card">
+                <img src="images/together.png" alt="Photo 1" class="photo-image">
+                <p>Us together</p>
+            </div>
+            <div class="photo-card">
+                <img src="images/together2.png" alt="Photo 1" class="photo-image">
+                <p>Amazing memories</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="countdown">
+        <h2 class="section-title">Days we have been together!</h2>
+        <div class="countdown-display">
+            <div class="countdown-item">
+                <span class="countdown-number">147</span>
+                <span class="countdown-label">Days</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Made with ❤️ from Gaziantep, Turkey to Astana, Kazakhstan</p>
+        <p>Happy Birthday! 🌟</p>
+    </footer>
+
+    <script>
+        const celebrateBtn = document.querySelector('.cta-button');
+        
+        celebrateBtn.addEventListener('click', function() {
+            celebrateBtn.textContent = '💕 I Love You! 💕';
+            celebrateBtn.style.transform = 'scale(1.2)';
+            
+            setTimeout(() => {
+                celebrateBtn.style.transform = 'scale(1)';
+            }, 300);
+        });
+    </script>
+</body>
+</html>
